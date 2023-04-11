@@ -18,7 +18,7 @@ const { data: article } = await useFetch(`/blogs/${slug}`, {
       <time :datetime="article.publishedAt" v-text="article.publishedAt" />
     </p>
 
-    <div class="blog-post__body" v-html="article.content" />
+    <div class="blog-post__body" v-html="article.body" />
   </main>
 </template>
 
